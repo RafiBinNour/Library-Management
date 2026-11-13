@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#122d36">
+  <title>BookNest — Library Management</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="BookNest dashboard"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5c3-1.3 5.7-.8 8 1.2 2.3-2 5-2.5 8-1.2v12c-3-1.3-5.7-.8-8 1.2-2.3-2-5-2.5-8-1.2zM12 6.7v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>booknest<small>LIBRARY WORKSPACE</small></span></a>
+      <div class="side-label">WORKSPACE</div>
+      <nav id="navigation" aria-label="Main navigation"></nav>
+      <div class="sidebar-bottom"><div class="side-tip"><div class="tip-icon">✦</div><strong>A little more organized.</strong><p>Everything your library needs, all in one place.</p><a href="#settings">Workspace settings <span>↗</span></a></div><div class="profile"><span class="avatar">L</span><div><strong>Library Admin</strong><small>Local workspace</small></div><span class="profile-dots">···</span></div></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><button class="mobile-menu icon-button" id="menu-toggle" aria-label="Open navigation">☰</button><div class="breadcrumb"><span>Workspace</span><span class="slash">/</span><strong id="breadcrumb">Overview</strong></div><div class="top-actions"><span class="top-date" id="top-date"></span><span class="divider"></span><span class="online-dot"></span><span class="workspace-name" id="top-library">My Library</span><span class="avatar top-avatar">L</span></div></header>
+      <div class="content" id="content"></div>
+      <footer>Made for the love of books <span>✳</span> <span>BookNest · Your library, beautifully organized.</span></footer>
+    </main>
+  </div>
+  <dialog id="modal"><div class="modal-inner"><div class="modal-head"><div><span class="eyebrow">BOOKNEST WORKSPACE</span><h2 id="modal-title"></h2></div><button type="button" class="icon-button close-modal" aria-label="Close dialog">✕</button></div><form id="modal-form"></form></div></dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <script>/* All application code is in script.js. */</script>
+</body>
+</html>
